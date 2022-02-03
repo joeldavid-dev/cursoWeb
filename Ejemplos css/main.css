@@ -1,0 +1,21 @@
+body{
+    background-color: rgb(220, 220, 220);
+}
+
+#parrafo {
+    color: aquamarine;
+}
+
+.caja {
+    margin: 8px;
+    padding: 8px;
+    border-style: solid;
+    border-width: 0.2cm;
+    border-color: royalblue;
+    border-left: 6px solid salmon;
+    background-color: purple;
+    border-radius: 8px;
+    height: 100px;
+    width: 100px;
+    color: lightblue;
+}
