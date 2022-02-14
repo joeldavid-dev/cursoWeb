@@ -1,0 +1,13 @@
+/*
+p {
+    display: inline;
+}
+*/
+
+#invisible {
+    display: none; /* Vuelve invisible.*/
+}
+
+span {
+    display: block;
+}
