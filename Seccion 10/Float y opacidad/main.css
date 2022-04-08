@@ -1,0 +1,18 @@
+body {
+    background-color: bisque;
+}
+
+img {
+    float: right;
+    /*opacity: 0.5;*/
+}
+
+/*Hover sirve para cambiar los valores de la imagen cuando
+el mouse pasa sobre la imagen*/
+img:hover {
+    opacity: 0.6;
+}
+div p {
+    color: blue;
+}
+

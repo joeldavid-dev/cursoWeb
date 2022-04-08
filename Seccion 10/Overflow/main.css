@@ -1,0 +1,11 @@
+body {
+    background-color: bisque;
+}
+
+#over {
+    width: 100px;
+    height: 100px;
+    /*overflow: visible; El que viene por defecto*/
+    overflow: auto;
+    /*Agrega scroll automaticamente si es necesario*/
+}

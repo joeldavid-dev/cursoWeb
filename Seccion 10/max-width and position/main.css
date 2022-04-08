@@ -1,0 +1,15 @@
+body {
+    background-color: aqua;
+}
+
+p {
+    background-color: brown;
+    max-width: 350px;
+    margin: auto;
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    right: 15px;
+    /*left: 15px;*/
+
+}
