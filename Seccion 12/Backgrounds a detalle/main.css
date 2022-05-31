@@ -1,0 +1,16 @@
+body {
+    background-color: rgb(49, 46, 59);
+    color: rgb(200, 200, 200);
+}
+
+.fondo {
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(16, 15, 19, 0.5);
+    /*background-color: rgb(16, 15, 19);
+    background-image: url('https://browsecat.net/sites/default/files/red-awesome-background-126468-728286-8162446.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: cover;*/
+    background: green url('https://starwarsblog.starwars.com/wp-content/uploads/2020/04/star-wars-backgrounds-38.jpg') no-repeat center fixed;
+}
