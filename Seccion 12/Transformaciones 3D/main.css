@@ -1,0 +1,18 @@
+body {
+    background-color: rgb(205, 205, 219);
+    color: rgb(48, 48, 48);
+}
+
+.box {
+    position: relative;
+    left: 50px;
+    top: 50px;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    box-shadow: 1px 2px 2px rgb(167, 167, 167); 
+    
+    /*transform: rotateX(45deg);
+    transform: rotateY(45deg);*/
+    transform: rotate(20deg);
+}

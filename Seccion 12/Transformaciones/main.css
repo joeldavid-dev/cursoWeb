@@ -1,0 +1,21 @@
+body {
+    background-color: rgb(205, 205, 219);
+    color: rgb(48, 48, 48);
+}
+
+.box {
+    position: relative;
+    left: 50px;
+    top: 50px;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    box-shadow: 1px 2px 2px rgb(167, 167, 167); 
+    /*transform: rotate(-20deg);
+    transform: translate(50px, 100px);
+    transform: scale(.5,.5);
+    transform: skewX(25deg);
+    transform: skewY(25deg);*/
+    transform: skew(25deg, 10deg);
+
+}

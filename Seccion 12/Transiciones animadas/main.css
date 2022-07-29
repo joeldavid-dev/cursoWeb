@@ -1,0 +1,24 @@
+body {
+    background-color: rgb(205, 205, 219);
+    color: rgb(48, 48, 48);
+}
+
+.box {
+    position: relative;
+    left: 50px;
+    top: 50px;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.151); 
+    border-radius: 15px;
+    
+    transition: 0.3s;
+    /*transition-delay: 0.3s; o transition: 0.3s 0.3s; para retrasar la animación*/
+}
+
+.box:hover {
+    transform: scale(1.05, 1.05);
+    background-image: linear-gradient(45deg, rgb(0, 153, 255), rgb(0, 255, 157));
+    box-shadow: 0px 0px 30px rgb(0, 204, 255); 
+}
