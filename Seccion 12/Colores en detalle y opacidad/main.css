@@ -1,0 +1,10 @@
+body {
+    background-color: rgb(49, 46, 59);
+    color: rgb(200, 200, 200);
+}
+
+.fondo {
+   /*background-color: rgb(13, 105, 101); Rojo, verde, azul, opacidad 0-1
+   background-color: hsl(152, 90%, 37%, 100%); hue, saturación, brillo, alfa
+   opacity: 0.5;*/
+}
