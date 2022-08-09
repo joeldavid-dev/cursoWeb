@@ -1,0 +1,24 @@
+@font-face {
+    font-family: IBM_plex_mono;
+    src: url(IBMPlexMono-Regular.ttf);
+}
+
+@font-face {
+    font-family: major_mono;
+    src: url(MajorMonoDisplay-Regular.ttf);
+}
+
+body {
+    background-color: black;
+    color: wheat;
+    font-family: IBM_plex_mono;
+    font-size: 2cm;
+}
+
+.element {
+    background-color: red;
+}
+
+.grid {
+    display: inline-grid;
+}
