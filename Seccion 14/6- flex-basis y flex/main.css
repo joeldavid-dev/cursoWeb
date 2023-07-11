@@ -1,0 +1,49 @@
+@font-face {
+    font-family: IBM_plex_mono;
+    src: url(IBMPlexMono-Regular.ttf);
+}
+
+@font-face {
+    font-family: major_mono;
+    src: url(MajorMonoDisplay-Regular.ttf);
+}
+
+body {
+    background-color: black;
+    color: rgb(255, 255, 255);
+    font-family: IBM_plex_mono;
+    font-size: 20px;
+}
+
+/* Flexbox. Es un contenedor unidimensional,
+se puede modificar la direccion en la que el contenedor se llena.
+*/
+.flex {
+    display: flex;
+    /*flex-wrap: wrap; Hace que el contenido se ajuste al ancho.
+    flex-flow hace lo mismo, pero configurando la dirección en una sola
+    línea. */
+    flex-flow: row wrap;
+    height: 200px;
+}
+
+.red {
+    background-color: red;
+}
+
+.primero {
+    /* flex-basis asigna un ancho inicial. flex grow activa
+    la capacidad de crecer a un elemento.
+    flex-grow: 1;
+    flex-basis: 20px;
+
+    flex es un "atajo" o forma rapida de incorporar ambas líneas. */
+    flex: 1 120px;
+}
+
+.segundo {
+    flex-grow: 1;
+}
+.tercero {
+    flex-grow: 2;
+}
