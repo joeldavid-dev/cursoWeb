@@ -16,7 +16,6 @@ body {
 }
 
 .grid {
-    background-color: red;
     display: grid;
     grid-template-areas: "header header"
         "content sidebar"
@@ -27,8 +26,6 @@ body {
     grid-auto-rows: 140px;
     /*grid-auto-flow: column;*/
     grid-auto-flow: row;
-    justify-items: stretch;
-    align-items: center;
 }
 
 .header {
@@ -40,5 +37,14 @@ body {
     */
 
     grid-column: col-inicio / col-fin 3;
-    grid-row: row-inicio/row-fin 3;
+    grid-row: row-inicio / row-fin 3;
+}
+
+.red {
+    background-color: red;
+}
+/* Sección agregada */
+.item-1 {
+    justify-self: center;
+    align-self: center;
 }
