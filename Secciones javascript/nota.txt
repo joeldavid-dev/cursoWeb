@@ -1,0 +1,5 @@
+Para ejecutar el archivo index.js:
+
+1. Escribir en linea de comandos "node index.js"
+
+Nota: Debe estar instalado Node.js en la computadora.

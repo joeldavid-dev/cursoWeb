@@ -1,7 +1,7 @@
-// SECCION 15. JAVASCRIPT, DECLARACION DE VARIABLES Y TIPOS DE DATOS.
+// === SECCION 15. JAVASCRIPT, DECLARACION DE VARIABLES Y TIPOS DE DATOS. ===
 console.log('\n==== SECCION 15. VARIABLES Y TIPOS DE DATOS ====')
 
-// === TIPO DE DATOS EN JS ===
+// >>> TIPO DE DATOS EN JS.
 // String: Cadena de caracteres. 'a' 'Hola' 'Hola mundo' "Chanchito feliz"
 // Boolean: true o false.
 // Null: nulo. Variable definida cuyo valor es nulo.
@@ -9,10 +9,10 @@ console.log('\n==== SECCION 15. VARIABLES Y TIPOS DE DATOS ====')
 // Undefined: Variable que no ha sido definida.
 // Object: objeto. Estructura que nos permite agrupar datos.
 
-// === DEFINICION DE VARIABLES ===
+// >>> DEFINICION DE VARIABLES.
 // var, let y const. El nombre de la variable siempre empiza con
 // una letra.
-// var (Tratar de evitar. Obliga a declarar a tope de archivo.)
+// var (Tratar de evitar. Obliga a declarar al inicio del archivo.)
 // var miPrimeraVariable = 'lala'
 
 // let
@@ -46,7 +46,7 @@ console.log(nulo)
 // Imprimir multiples variables
 console.log('nulo', 12, nulo)
 
-// === OBJETOS ===
+// >>> OBJETOS.
 // Objeto vacío
 const miPrimerObjeto = {}
 
@@ -60,7 +60,7 @@ const miObjeto = {
 
 console.log(miObjeto, miObjeto.unString)
 
-// === ARREGLOS ===
+// >>> ARREGLOS.
 const arrVacio = []
 const arr = [1,2,'Hola', miObjeto]
 
@@ -73,10 +73,15 @@ arrVacio.push(miPrimeraVariable)
 arr.pop()
 console.log(arrVacio,arr)
 
-// SECCION 16. OPERADORES.
+// === SECCION 16. OPERADORES. ===
+// En esta sección se practican los operadores matematicos basicos 
+// dentro de javascript. Son útiles para realizar algoritmos y calculos.
+// Tambien se tratan los comparadores lógicos para números y valores
+// booleanos.
+
 console.log('\n==== SECCION 16. OPERADORES ====')
 
-//=== OPERADORES MATEMÁTICOS ===
+// >>> OPERADORES MATEMÁTICOS.
 const suma = 1 + 2
 const resta = 1 - 2
 const multiplicacion = 2 * 3
@@ -104,7 +109,7 @@ console.log('Usando *= '+num)
 num /= 2
 console.log('Usando /= '+num)
 
-// === OPERADORES DE COMPARACION ===
+// >>> OPERADORES DE COMPARACION.
 // Comparar si es exactamente igual. Extricto.
 const resultado1 = 5 === 6
 console.log('5 === 6 = '+resultado1)
@@ -124,7 +129,7 @@ const resultado7 = 5 !== '5'
 const resultado8 = 5 != '5'
 console.log(resultado7,resultado8)
 
-// === OPERADORES LÓGICOS ===
+// >>> OPERADORES LÓGICOS.
 // or || , and && , not !
 const resultOr = false || false || true || false
 // OR evalua hasta el primer elemento que evalua en true. y lo asigna a la constante.
@@ -138,3 +143,52 @@ const resultAnd = false && false && true && false
 console.log('AND: '+resultAnd)
 const resultNot = !false
 console.log('NOT: '+resultNot)
+
+// === SECCION 17. CONTROL DE FLUJO. ===
+// Nos permiten realizar iteraciones o condiciones.
+console.log('\n==== SECCION 17. CONTROL DE FLUJO. ====')
+
+// >>> If
+const edad = 5
+if (edad > 5 && edad < 18) {
+    console.log('El niño puede jugar')
+} else {
+    console.log('El niño no puede jugar :(')
+}
+
+// >>> While
+let x = 0
+while (x < 5) {
+    console.log(x)
+    x++
+}
+
+// >>> Switch
+switch (3) {
+    case 1: {
+        console.log('Yo soy el caso 1')
+        break
+    }
+    case 2: {
+        console.log('Chanchito feliz')
+        break
+    }
+    case 3:
+        console.log('Chanchito triste :(')
+        break
+
+    default:
+        console.log('No hay chanchitos')
+        break
+}
+
+// >>> For
+for (let i = 0; i < 10; i++) {
+    console.log(i)
+}
+
+const numeros = [1,2,'Hola',4,5]
+
+for (let i = 0; i < numeros.length; i++) {
+    console.log(numeros[i])
+}
