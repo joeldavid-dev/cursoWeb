@@ -73,7 +73,7 @@ arrVacio.push(miPrimeraVariable)
 arr.pop()
 console.log(arrVacio,arr)
 
-// === SECCION 16. OPERADORES. ===
+// === SECCION 16. OPERADORES. ==============================================
 // En esta sección se practican los operadores matematicos basicos 
 // dentro de javascript. Son útiles para realizar algoritmos y calculos.
 // Tambien se tratan los comparadores lógicos para números y valores
@@ -82,11 +82,11 @@ console.log(arrVacio,arr)
 console.log('\n==== SECCION 16. OPERADORES ====')
 
 // >>> OPERADORES MATEMÁTICOS.
-const suma = 1 + 2
-const resta = 1 - 2
-const multiplicacion = 2 * 3
-const division = 9 / 3
-console.log(suma, resta, multiplicacion, division)
+//const suma = 1 + 2
+//const resta = 1 - 2
+//const multiplicacion = 2 * 3
+//const division = 9 / 3
+//console.log(suma, resta, multiplicacion, division)
 
 const modulo = 10 % 3
 console.log('Modulo: ' + modulo)
@@ -144,7 +144,7 @@ console.log('AND: '+resultAnd)
 const resultNot = !false
 console.log('NOT: '+resultNot)
 
-// === SECCION 17. CONTROL DE FLUJO. ===
+// === SECCION 17. CONTROL DE FLUJO. ========================================
 // Nos permiten realizar iteraciones o condiciones.
 console.log('\n==== SECCION 17. CONTROL DE FLUJO. ====')
 
@@ -187,8 +187,66 @@ for (let i = 0; i < 10; i++) {
     console.log(i)
 }
 
-const numeros = [1,2,'Hola',4,5]
+//const numeros = [1,2,'Hola',4,5]
 
-for (let i = 0; i < numeros.length; i++) {
-    console.log(numeros[i])
+//for (let i = 0; i < numeros.length; i++) {
+//    console.log(numeros[i])
+//}
+
+// === SECCION 18. FUNCIONES. ===============================================
+// Distintas formas para reutilizar código ya establecido.
+console.log('\n==== SECCION 18. FUNCIONES. ====')
+
+// >>> FUNCIONES BASICAS
+function iterar(arg1) {
+    for (let i = 0; i < arg1.length; i++) {
+        console.log(arg1[i])
+    }
 }
+
+const numeros = [1,2,'Hola',4,5]
+const nombres = ['Pedro','Juan','Felipe','Chanchito feliz','Chanchito triste']
+iterar(numeros)
+iterar(nombres)
+
+// >>> MAS FUNCIONES
+//function suma(a, b) {
+//    return a + b;
+//}
+
+//resutladoSuma1 = suma(1,2)
+//resutladoSuma2 = suma(5,6)
+//resutladoSuma3 = suma(resutladoSuma1,resutladoSuma2)
+//console.log('resultado',resutladoSuma3);
+
+// >>> CALLBACKS
+function sumar(a, b, cb) {
+    const r = a + b
+    cb(r)
+}
+function callback(result) {
+    console.log('Resultado callback:',result)
+}
+// Pasamos la referencia de la función callback a la función sumar,
+// donde se realiza la suma y posteriormente usa esa referencia para ejecutar
+// callback.
+
+// Las funciones en javascript son valores. Se pueden pasar como argumentos
+// a otras funciones y componer comportamientos nuevos al código.
+
+sumar(2, 3, callback)
+
+// >>> FAT ARROW FUNCTIONS
+const miFatArrowFunction = (a, b) => a + b
+const otraFAF = (a, b) => {
+    return a + b
+}
+r = miFatArrowFunction(1,2)
+console.log('Resultado fat arrow:',r)
+console.log('Resultado otraFAF:',otraFAF(4,5))
+
+// >>> FUNCIONES ANONIMAS
+// Desventaja: no nos permite reutilizar el código de la función.
+sumar(2, 3, function (r) {
+    console.log('Soy una función anonima y mi resultado es',r)
+})
