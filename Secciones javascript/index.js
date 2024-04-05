@@ -313,21 +313,21 @@ prTema('PROMESAS')
 // Aquí se ejecuta primero el console log.
 Promise.resolve(2).then(valor => console.log(valor))
 Promise.resolve(2).then(valor => valor + 1)
-.then(valor => console.log(valor))
+    .then(valor => console.log(valor))
 
 // Manejando errores con catch y rechazando valores con reject
 Promise.resolve(2)
-.then(valor => Promise.reject(1))
-.then(valor => console.log(valor))
-.catch(e => console.error('error'))
+    .then(valor => Promise.reject(1))
+    .then(valor => console.log(valor))
+    .catch(e => console.error('error'))
 
 // Estructura de Promise con retardo de 1 seg. para
 // ejemplificar su fincionamiento asincrono.
 new Promise((resolve, reject) => {
     setTimeout(() => reject(2), 1000)
 })
-.then(x => console.log(x))
-.catch(e => console.error('error'))
+    .then(x => console.log(x))
+    .catch(e => console.error('error'))
 
 // ====================================================
 // Funciones de impresión

@@ -1,0 +1,11 @@
+Sección 21. API
+
+Comandos utilizados:
+
+// NPM: Node Package Module
+// Crea un archivo inicial para la API. -y acepta los valores por defecto.
+npm init -y
+
+// Node Package Module install in storage express
+// Instala express, una dependencia necesaria
+npm install -S express
