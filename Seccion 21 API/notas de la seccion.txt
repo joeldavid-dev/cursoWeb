@@ -1,0 +1,35 @@
+Sección 21. API
+
+=> Anotaciónes:
+Se usan verbos para conectarse con el cliente, los cuales son:
+
+GET/users           => lista un arreglo con los usuarios
+GET/users/:id       => envia un usuario (objeto)
+POST/users          => crea users
+PUT/users/:id       => reemplazar un usuario existente
+PATCH/users/:id     => actualiza un usuario existente (se suele usar igual que put)
+DELETE/users/:id    => Borra un user
+
+
+req: Request (peticiones)
+res: Response (Enviar cosas al usuario)
+Status permite indicar al cliente si la respuesta tuvo
+exito y si incluye datos. Los datos se envian con send
+200 = OK
+201 = OK creado. (a veces el dev devuelve el ID de lo que se creo)
+204 = OK no content (put, pach y delete)
+
+
+
+=> Comandos utilizados:
+
+// NPM: Node Package Module
+// Crea un archivo inicial para la API. -y acepta los valores por defecto (yes).
+npm init -y
+
+// Node Package Module install in storage express
+// Instala express, una dependencia necesaria
+npm install -S express
+
+// Ejecutar API
+node api.js
