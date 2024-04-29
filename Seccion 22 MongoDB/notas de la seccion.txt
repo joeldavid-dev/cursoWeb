@@ -1,0 +1,27 @@
+Sección 22 Introducción a MongoDB
+
+MongoDB es una base de datos orientada a documentos.
+Los documentos son objetos JSON. Iguales a un objeto
+de JavaScript.
+
+Se compone de:
+
+Colecciones:    Listado de documentos. Se recomienda usar con esquemas.
+Documentos:     Objetos JSON.
+Propiedades:    Los documentos se componen de propiedades.
+
+Alternativas de MongoDB:
+- Community Server
+- Enterprise Server
+- Atlas. Basado en la nube, gratuito hasta 500 mb.
+
+URL para conectar a atlas
+mongodb+srv://joeldaviddev:<password>@cluster0.egfqkut.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+
+
+
+
+// Comandos
+
+Para instalar la dependencia necesaria para conectar MongoDB
+npm i -S mongoose
