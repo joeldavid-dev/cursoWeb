@@ -1,4 +1,4 @@
-// Asingmacion del framework express.Require importa
+// Asingmacion del framework express. Require importa
 // dependencias y recibe el nombre de la dependencia
 const express = require('express')
 const mongoose = require('mongoose')
