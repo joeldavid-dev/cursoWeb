@@ -1,6 +1,6 @@
 Sección 21. API
 
-=> Anotaciónes:
+=> Anotaciones:
 Se usan verbos para conectarse con el cliente, los cuales son:
 
 GET/users           => lista un arreglo con los usuarios

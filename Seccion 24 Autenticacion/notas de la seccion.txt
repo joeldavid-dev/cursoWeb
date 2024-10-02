@@ -1,0 +1,21 @@
+Iniciar proyecto:
+npm init
+
+Instalar librerias necesarias:
+npm i -S express mongoose bcrypt jsonwebtoken express-jwt
+
+Una variable de entorno es un valor que se almacena en el sistema operativo.
+Es necesario para guardar datos vulnerables que no deben ser vistos por otros desarrolladores,
+como claves de acceso o contraseñas.
+
+Crear una variable de entorno en git bash:
+export SECRET=mi-string-secreto
+
+Ver las variables de entorno en git bash:
+env
+
+En Windows PowerShell, se crea una variable de entorno de la siguiente manera:
+setx SECRET "mi-string-secreto" 
+
+En el código, para utilizar una variable de entorno se usa la siguiente línea:
+process.env.SECRET
